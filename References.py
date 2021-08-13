@@ -36,3 +36,27 @@ def memory_test():
 
 
 memory_test()
+
+a = "".join(["p", "y", "t", "h", "o", "n"])
+
+b = "p" + "y" + "t" + "h" + "o" + "n"
+
+c = "python"
+
+print(a, b, c)
+print(a is b)
+print(a is c)
+print(b is c)
+
+d, e = [], []
+
+print(f"Compare values: {d == e}")
+print(f"Refer to same object: {d is e}")
+
+
+def calculate(x):
+    return x + 1
+
+
+if (result := calculate(5)) >= 5:
+    print(result)
